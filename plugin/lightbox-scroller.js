@@ -65,8 +65,6 @@ videojs.registerPlugin('pluginName', function() {
 
       scroller.onclick = function(e) {
       	// Load the selected video
-      	console.log("EVENT.onClick video:" + e.target.id);
-      	// Load the selected video
       	myPlayer.src(playlistData[e.target.id].sources);
       	// Reveal the lightbox
       	document.getElementById("playerLightbox").className = "playerShow";
